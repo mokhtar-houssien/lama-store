@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>لمعة | LAM'A</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- رأس الموقع -->
+    <header>
+        <nav class="navbar">
+
+            <h1 class="logo">لَمْعَة</h1>
+
+            <div class="nav-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#watches">الساعات</a>
+                <a href="#perfumes">العطور</a>
+                <a href="#accessories">الإكسسوارات</a>
+                <a href="#cart">
+                    السلة (<span id="nav-cart-count">0</span>)
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main id="home">
+
+        <!-- الواجهة الترحيبية -->
+        <section class="hero">
+
+            <p class="hero-label">
+                مرحبًا بك في متجر لمعة
+            </p>
+
+            <h2>
+                تفاصيل صغيرة، تترك أثرًا كبيرًا
+            </h2>
+
+            <p>
+                اكتشف عالم الساعات والعطور والإكسسوارات
+                التي تضيف لمسة أناقة إلى يومك.
+            </p>
+
+            <a href="#products" class="hero-btn">
+                تصفح المنتجات
+            </a>
+
+        </section>
+
+
+        <!-- قسم المنتجات -->
+        <section id="products" class="products-section">
+
+            <div class="section-heading">
+                <h2>منتجاتنا المميزة</h2>
+
+                <p>
+                    تشكيلة تجريبية من الساعات
+                    والعطور والإكسسوارات
+                </p>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- الساعة -->
+                <article class="product-card" id="watches">
+
+                    <img
+                        src="images/watch.png"
+                        alt="ساعة كلاسيكية"
+                    >
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            الساعات
+                        </span>
+
+                        <h3>ساعة كلاسيكية</h3>
+
+                        <p>
+                            ساعة بتصميم أنيق ومميز.
+                        </p>
+
+                        <p class="product-price">
+                            منتج تجريبي - السعر غير محدد
+                        </p>
+
+                        <button type="button">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- العطر -->
+                <article class="product-card" id="perfumes">
+
+                    <img
+                        src="images/perfume.png"
+                        alt="عطر فاخر"
+                    >
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            العطور
+                        </span>
+
+                        <h3>عطر فاخر</h3>
+
+                        <p>
+                            عطر أنيق بلمسة راقية.
+                        </p>
+
+                        <p class="product-price">
+                            منتج تجريبي - السعر غير محدد
+                        </p>
+
+                        <button type="button">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- الإكسسوار -->
+                <article class="product-card" id="accessories">
+
+                    <img
+                        src="images/accessory.png"
+                        alt="سوار أنيق"
+                    >
+
+                    <div class="product-info">
+
+                        <span class="category">
+                            الإكسسوارات
+                        </span>
+
+                        <h3>سوار أنيق</h3>
+
+                        <p>
+                            إكسسوار جميل بلمسة فاخرة.
+                        </p>
+
+                        <p class="product-price">
+                            منتج تجريبي - السعر غير محدد
+                        </p>
+
+                        <button type="button">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- سلة المشتريات -->
+        <section id="cart" class="cart-section">
+
+            <h2>🛒 سلة المشتريات</h2>
+
+            <p>المنتجات التي اخترتها:</p>
+
+            <div id="cart-items">
+                <p>السلة فارغة حاليًا.</p>
+            </div>
+
+            <div class="cart-footer">
+
+                <h3 id="cart-count">
+                    عدد القطع: 0
+                </h3>
+
+                <button id="clear-cart" type="button">
+                    تفريغ السلة
+                </button>
+
+            </div>
+
+
+            <!-- نموذج واتساب -->
+            <div class="checkout">
+
+                <h3>إرسال استفسار عن المنتجات</h3>
+
+                <form id="order-form">
+
+                    <label for="customer-name">
+                        اسم العميل
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customer-name"
+                        placeholder="اكتب اسمك"
+                        maxlength="100"
+                        required
+                    >
+
+                    <label for="customer-phone">
+                        رقم الهاتف (اختياري)
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="customer-phone"
+                        placeholder="رقم التواصل"
+                        maxlength="25"
+                    >
+
+                    <button type="submit">
+                        تجهيز الاستفسار عبر واتساب
+                    </button>
+
+                </form>
+
+                <p id="order-message" role="status"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- أسفل الموقع -->
+    <footer>
+
+        <h3>لَمْعَة</h3>
+
+        <p>تفاصيل صغيرة، تترك أثرًا كبيرًا</p>
+
+        <p>
+            متجر لمعة - نسخة تجريبية تعليمية
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
